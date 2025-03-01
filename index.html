@@ -25,21 +25,30 @@
 
   <!-- Place your site's HTML here -->
   <body>
-    <div><element class="banner"> Buy one get one free all online orders until 2/30 </element></div>
+    <nav class="offcanvas-nav">
+    <button class="menu-toggle" aria-expanded="false" aria-controls="offcanvas-menu">
+      <span class="menu-icon"></span> Menu
+    </button>
+    <ul id="offcanvas-menu" class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">More Receipes</a></li>
+      <li><a href="#">Shop Baking tools</a></li>
+    </ul>
+  </nav>
+  
+    <div><element class="banner">To access other receipes join our Elite Kooky Klub---- Pre-made cookie dough and ideal baking tools now available for purchase ---- Buy one get one free all online orders until 2/30 ----  30% off all orders for new memebers only! </element></div>
     <header>
       
-        <nav class="offcanvas-nav">
-          <button class="menu-toggle" aria-expanded="false"
-          aria-controls="offcanvas-menu">
-          <span class="menu-icon"></span> Menu
-          </button>
-          <ul id="offcanvas-menu" class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          </ul>
-          </nav>
-     
+      <div class="hero">
+        <div class="hero-content">
+          <img src="bakinghead.webp" width="100%">
+        <h1>See This week's HOT Deals!</h1>
+        <p>Discover best deals every week!.</p>
+        <a href="Learn-more.html"><button type="submit">Learn More</button></a>
+        </div>
+        </div>
      
       <h1>Krazy Kooky Cookies</h1>
     
@@ -63,7 +72,7 @@
 
   </div>
   <div>
-    <h2>Make these cookies in just a few easy steps!</h2>
+    <h2>Make our signature "For Beginners" cookies in just a few easy steps!</h2>
   </div>
   <div>
    
@@ -120,8 +129,51 @@
      
     </main>
   <footer>
-   <a href="https://www.ihearteating.com/easiest-chocolate-chip-cookie-recipe/"target="_blank">More Information</a>
-<div> <a href="kookycookie@gmail.com">Contact Us</a></div>
+  
+<h3>Join our exclusive Kooky Klub for monthly deals and promotions</h3>
+<form action="./thank-you.html" id="registrationForm">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" required autocomplete="given-name" autofocus>
+  <span id="firstNameError" class="error"></span><br><br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+  <span id="lastNameError" class="error"></span><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required autocomplete="email">
+  <span id="emailError" class="error"></span><br><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required minlength="8">
+  <span id="passwordError" class="error"></span><br><br>
+
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required><br><br>
+
+  <label>Gender:</label>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+  <span id="genderError" class="error"></span><br><br>
+
+  <label for="country">Country:</label>
+  <select id="country" name="country" required>
+    <option value="">Select a country</option>
+    <option value="us">United States</option>
+    <option value="ca">Canada</option>
+    <option value="uk">United Kingdom</option>
+    </select><br><br>
+
+  
+  <input type="checkbox" id="terms" name="terms" required>
+  <label for="terms">I agree to recieve monthy emails including deals, promotions, and other Kooky news.</label>
+    <span id="termsError" class="error"></span><br><br>
+
+  <button type="submit">Sign up</button>
+</form>
+
   
 <!-- contact, info , address, time-->
   </footer>
